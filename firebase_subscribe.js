@@ -22,7 +22,6 @@ if ('Notification' in window) {
 }
 
 function subscribe() {
-    alert('сработало');
     // запрашиваем разрешение на получение уведомлений
     messaging.requestPermission()
         .then(function () {
@@ -53,10 +52,10 @@ function sendTokenToServer(currentToken) {
     if (!isTokenSentToServer(currentToken)) {
         console.log('Отправка токена на сервер...');
 
-        var url = ''; // адрес скрипта на сервере который сохраняет ID устройства
-        $.post(url, {
-            token: currentToken
-        });
+        // var url = ''; // адрес скрипта на сервере который сохраняет ID устройства
+        // $.post(url, {
+        //     token: currentToken
+        // });
 
         setTokenSentToServer(currentToken);
     } else {
