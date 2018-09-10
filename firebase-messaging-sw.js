@@ -8,8 +8,9 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-
 navigator.serviceWorker.ready.then(function(registration) {
+    console.log(payload.notification.data);
+    console.log(payload.notification);
     payload.notification.data = payload.notification; // параметры уведомления
     registration.showNotification(payload.notification.title, payload.notification);
 }).catch(function(error) {
