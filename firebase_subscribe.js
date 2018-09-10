@@ -8,6 +8,12 @@ firebase.initializeApp({
 if ('Notification' in window) {
     var messaging = firebase.messaging();
 
+    messaging.onMessage(function(payload) {
+        console.log('Message received. ', payload);
+        new Notification(payload.notification.title, payload.notification);
+    });
+
+
     // пользователь уже разрешил получение уведомлений
     // подписываем на уведомления если ещё не подписали
     if (Notification.permission === 'granted') {
