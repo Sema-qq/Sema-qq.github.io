@@ -22,7 +22,6 @@ if ('Notification' in window) {
 }
 
 function subscribe() {
-    alert('сработало');
     // запрашиваем разрешение на получение уведомлений
     messaging.requestPermission()
         .then(function () {
