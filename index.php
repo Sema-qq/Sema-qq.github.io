@@ -15,7 +15,7 @@ var_dump($matches1);
 $result = preg_match_all('#cam[^/][0-9a-z-:.]+#i', $string, $matches2);
 
 var_dump($matches2);*/
-
+echo 'тестовый текст';
 ?>
 <script type="text/javascript">
 	Notification.requestPermission(function(permission){
