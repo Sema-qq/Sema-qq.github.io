@@ -1,3 +1,4 @@
+alert('файл подключен');
 // firebase_subscribe.js
 firebase.initializeApp({
     messagingSenderId: '799694463735'
