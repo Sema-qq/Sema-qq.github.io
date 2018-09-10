@@ -1,21 +1,2 @@
-<script type="text/javascript">
-	Notification.requestPermission(function(permission){
-		// переменная permission содержит результат запроса
-		console.log('Результат запроса прав:', permission);
-	});
-
-	var notification = 	new Notification(
-		'Тестовая мессага!', 
-		{
-			body:"Пользователь кликнул на уведомление",
-			dir: 'auto',
-			icon: 'g.ico',
-			tag: 'https://google.com',
-			onclick: 'location = https://google.com'
-		}
-	);
-
-	// notification.onclick = function() {
-	//   location = notification.tag;
-	// }
-</script>
+<script type="text/javascript" src="//www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+<script type="text/javascript" src="/firebase_subscribe.js"></script>
