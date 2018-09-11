@@ -55,7 +55,6 @@ function subscribe() {
 
 // отправка ID на сервер
 function sendTokenToServer(currentToken) {
-    alert(currentToken);
     if (!isTokenSentToServer(currentToken)) {
         console.log('Отправка токена на сервер...');
 
