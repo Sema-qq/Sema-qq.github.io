@@ -10,7 +10,7 @@ const messaging = firebase.messaging();
 
 // messaging-sw.js
 self.addEventListener('notificationclick', function(event) {
-    const target = event.notification.data.click_action || '/';
+    const target = event.notification.click_action || '/';
     event.notification.close();
 
     // этот код должен проверять список открытых вкладок и переключатся на открытую
